@@ -1,0 +1,37 @@
+{
+	"nodes":[
+		{"id":"fcdd694876087fb0","type":"text","text":"# Introduction to JAVA","x":-161,"y":-680,"width":360,"height":90},
+		{"id":"30bba5d1b2dd92d9","type":"text","text":"Compiler","x":19,"y":-345,"width":142,"height":50},
+		{"id":"fa3b1aa02e5f2f2d","type":"text","text":"Interpreter","x":259,"y":-345,"width":142,"height":50},
+		{"id":"45208b472c33ab76","type":"text","text":"- this code will not directly run on system\n- we need JVM to run this\n- Reason why java is platform independent","x":99,"y":-105,"width":242,"height":260},
+		{"id":"b934d4ddf4543c64","type":"text","text":"- this is the source code","x":-219,"y":-85,"width":250,"height":60},
+		{"id":"cd90f4352a8b88f3","type":"text","text":".java file (human readable)","x":-219,"y":-245,"width":250,"height":60},
+		{"id":"5376dd8abea87e06","type":"text","text":".class file\n(byte code)","x":141,"y":-245,"width":160,"height":60},
+		{"id":"709f3a1d43f7327d","type":"text","text":"Machine code(0 and 1)","x":381,"y":-240,"width":245,"height":50},
+		{"id":"5f379d7bbe81935e","type":"text","text":"**How java code is executed?**","x":-461,"y":-480,"width":300,"height":70},
+		{"id":"abd33a587f080a65","type":"text","text":"# Architecture of Java","x":-156,"y":320,"width":375,"height":80},
+		{"id":"87dc4cc8402380b3","type":"text","text":"JDK = JRE + Development Tools\n(Java Development Kit)","x":-289,"y":500,"width":640,"height":460},
+		{"id":"68adca7f61da95bc","type":"text","text":"JRE = JVM + Library class\n(Java runtime environment)","x":-229,"y":600,"width":500,"height":340},
+		{"id":"7b3bfe8a5224746d","type":"text","text":"JVM (Java virtual machine)","x":-151,"y":700,"width":382,"height":220},
+		{"id":"3bad9ce313cf4afe","type":"text","text":"JIT\n(Just in time)","x":-85,"y":770,"width":250,"height":60},
+		{"id":"1a1a849e76654084","type":"text","text":"## JDK\n■ Provide Environment to develop and run the java program. It is a package that includes:-\n1. **Development tools** :- To provide an environment to run your program.\n2. **JRE** :- To Execute your program.\n3. **A compiler** :- javac\n4. **Archiver** :- Jar\n5. **Docs generator** :- Javadoc\n6. Interpreter/loader\n","x":-531,"y":1120,"width":360,"height":383},
+		{"id":"0533e2baa7e87af2","type":"text","text":"## JRE\n■ It is an installation package that provides environment to only run the program.\nIt consist of:-\n1. Deployment technology\n2. User interface toolkit\n3. Integration libraries\n4. Base libraries\n5. **JVM** :- Java virtual Machine","x":249,"y":1142,"width":395,"height":340},
+		{"id":"4c24a354257328f3","type":"text","text":"# JAVA","x":-51,"y":1430,"width":145,"height":73},
+		{"id":"3616abe7cca51c23","type":"text","text":"## JVM Execution\n■ **Interpreter**\n→ Line by line execution\n→ When one method is called many times it will interpret again and\nagain\n■ **JIT**\nThose methods that are repeated, JIT provides direct machine code so that interpretation is not required.\n→ Makes execution Faster.\nGarbage collector","x":-138,"y":1630,"width":320,"height":352}
+	],
+	"edges":[
+		{"id":"8bdf8610a478aa68","fromNode":"5376dd8abea87e06","fromSide":"right","toNode":"709f3a1d43f7327d","toSide":"left"},
+		{"id":"b7d37c3d6ee50280","fromNode":"cd90f4352a8b88f3","fromSide":"right","toNode":"5376dd8abea87e06","toSide":"left"},
+		{"id":"186adacc5e667e6e","fromNode":"5376dd8abea87e06","fromSide":"bottom","toNode":"45208b472c33ab76","toSide":"top"},
+		{"id":"24e1a49b6c02ad44","fromNode":"cd90f4352a8b88f3","fromSide":"bottom","toNode":"b934d4ddf4543c64","toSide":"top"},
+		{"id":"5d44fde8336a293e","fromNode":"30bba5d1b2dd92d9","fromSide":"bottom","toNode":"5376dd8abea87e06","toSide":"left"},
+		{"id":"8500d58dabec281f","fromNode":"fa3b1aa02e5f2f2d","fromSide":"bottom","toNode":"709f3a1d43f7327d","toSide":"left"},
+		{"id":"ae94bf01a3c943e7","fromNode":"3bad9ce313cf4afe","fromSide":"left","toNode":"68adca7f61da95bc","toSide":"left"},
+		{"id":"feccf11bac479fb0","fromNode":"7b3bfe8a5224746d","fromSide":"top","toNode":"68adca7f61da95bc","toSide":"top"},
+		{"id":"53dc2dd942117cc3","fromNode":"4c24a354257328f3","fromSide":"left","toNode":"1a1a849e76654084","toSide":"right"},
+		{"id":"a716cbbbb3833902","fromNode":"4c24a354257328f3","fromSide":"right","toNode":"0533e2baa7e87af2","toSide":"left"},
+		{"id":"5ffc60f8a5c81e4d","fromNode":"4c24a354257328f3","fromSide":"bottom","toNode":"3616abe7cca51c23","toSide":"top"},
+		{"id":"60d96943d64b7f1c","fromNode":"abd33a587f080a65","fromSide":"bottom","toNode":"87dc4cc8402380b3","toSide":"top"},
+		{"id":"eab018aae20c78a9","fromNode":"5f379d7bbe81935e","fromSide":"bottom","toNode":"cd90f4352a8b88f3","toSide":"left"}
+	]
+}
